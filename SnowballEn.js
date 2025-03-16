@@ -3,7 +3,7 @@ This file is based on snowball-en.js in Snowball version 2.2.0.
 It is converted from commonjs to ES6 module and the export is changed to a class.
 */
 
-import BaseStemmer from './BaseStemmer';
+import BaseStemmer from './BaseStemmer.js';
 
 class SnowballEn {
     constructor() {
