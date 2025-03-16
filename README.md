@@ -8,6 +8,10 @@ This is a modern JavaScript port of the compiler-generated JavaScript stemming a
 
 You can just import it in your React project. Ideal for client side keyword search.
 
+## What is Stemming?
+
+Stemming is a text normalization technique that reduces words to their base or root form, called a "stem". For example, words like "connection", "connections", "connective", "connected", and "connecting" are all reduced to the stem "connect". This is particularly useful in search systems, as it allows a search for one form of a word to match documents containing other forms of the same word, improving search effectiveness.
+
 ## Usage
 
 ```javascript
@@ -19,8 +23,3 @@ const stemmer = new SnowballEn();
 console.log(stemmer.stemWord('running'));  // Outputs: 'run'
 console.log(stemmer.stemWord('conditional'));  // Outputs: 'condit'
 console.log(stemmer.stemWord('happiness'));  // Outputs: 'happi'
-```
-
-## License
-
-Same as the original Snowball project.
