@@ -15,11 +15,10 @@ Stemming is a text normalization technique that reduces words to their base or r
 ## Usage
 
 ```javascript
-import SnowballEn from './SnowballEn.js';
-
-const stemmer = new SnowballEn();
+import stemmer from './SnowballEn.js';
 
 // Example usage
 console.log(stemmer.stemWord('running'));  // Outputs: 'run'
 console.log(stemmer.stemWord('conditional'));  // Outputs: 'condit'
 console.log(stemmer.stemWord('happiness'));  // Outputs: 'happi'
+```
