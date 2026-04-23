@@ -1,12 +1,6 @@
 // SnowballEn.d.ts
-declare class BaseStemmer {
-    setCurrent(value: string): void;
-    getCurrent(): string;
-}
-
-declare class SnowballEn extends BaseStemmer {
+interface PublicStemmer {
     stemWord(word: string): string;
 }
-
-declare const stemmer: SnowballEn;
+declare const stemmer: PublicStemmer;
 export default stemmer;
