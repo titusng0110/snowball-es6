@@ -1220,5 +1220,7 @@ class SnowballEn extends BaseStemmer {
 // ----------------------------------------------------------------------------
 // Export Singleton for React
 // ----------------------------------------------------------------------------
-const stemmer = new SnowballEn();
-export default stemmer;
+const internalStemmer = new SnowballEn();
+export default {
+    stemWord: (word) => internalStemmer.stemWord(word)
+};
